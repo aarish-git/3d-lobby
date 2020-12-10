@@ -1,0 +1,16 @@
+{
+  "name": "3doffice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.112.1",
+    "three-gltf-loader": "^1.111.0",
+    "three-orbitcontrols": "^2.110.3"
+  }
+}
