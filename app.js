@@ -11,7 +11,7 @@ function init() {
   camera.position.z = 44;
 
   controls = new THREE.OrbitControls(camera);
-  controls.addEventListener("change", render);
+  controls.addEventListener("change", render, { passive: false } );
 
   function render() {
     renderer.render(scene, camera);
@@ -65,9 +65,9 @@ function init() {
   
   document.querySelector('#reception').addEventListener('click', () => {
     console.log("meetingRoom");
-    camera.position.x = -1389;
-    camera.position.y = 228;
-    camera.position.z = 45;
+    camera.position.x = -1616;
+    camera.position.y = 569;
+    camera.position.z = 226;
     controls.update();
   });
 
@@ -229,10 +229,3 @@ function animate() {
   requestAnimationFrame(animate);
 }
 init();
-
-// function changePosition(e) {
-//   $("#meetingRoom").click(function () {
-//     console.log("hi");
-//     camera.position.set(0, 5, 30);
-//   }); 
-// }
