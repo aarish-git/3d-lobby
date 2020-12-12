@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My first three.js app</title>
+  <script src="https://unpkg.com/three@0.87.1/build/three.js"></script>
+  <script src="https://unpkg.com/three@0.87.1/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://unpkg.com/three@0.87.1/examples/js/loaders/GLTFLoader.js"></script>
+  <style>
+    canvas {
+      display: block;
+    }
+
+    html {
+      overflow: hidden;
+      background: #000;
+    }
+    
+    .contents {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      top: 0px;
+      padding: 9px;
+      background-color: black;
+    }
+
+    .btn{
+      padding: 10px;
+      color: aliceblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contents">
+    <span class="btn btn-default" id="mainView">MAIN VIEW</span>
+    <span class="btn btn-default" id="reception">RECEPTION</span>
+    <span class="btn btn-default" id="meetingRoom">MEETING ROOM</span>
+    <span class="btn btn-default" id="conferenceHall">CONFERENCE HALL</span>
+    <span class="btn btn-default" id="cabin">CABIN</span>
+    <span class="btn btn-default" id="studio">STUDIO</span>
+    <!-- <span class="btn btn-default" id="stall">EXIBITION STALL</span> -->
+  </div>
+ 
+  <script src="app.js"></script>
+</body>
+
+</html>
